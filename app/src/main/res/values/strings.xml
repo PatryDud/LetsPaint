@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LetsPaint</string>
+    <string name="filePlace">Filename</string>
+</resources>

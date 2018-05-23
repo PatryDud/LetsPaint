@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    tools:context="com.example.pati.letspaint.MainActivity"
+    android:orientation="horizontal">
+
+   <com.example.pati.letspaint.PaintingSurface
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/painting_surface"
+       />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="onClickSave"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:baselineAligned="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <Button
+            android:layout_width="25pt"
+            android:layout_height="wrap_content"
+            android:id="@+id/blueButton"
+            android:background="@color/blue"
+            android:onClick="onClickBlue"/>
+        <Button
+            android:layout_width="25pt"
+            android:layout_height="wrap_content"
+            android:id="@+id/pinkButton"
+            android:background="@color/pink"
+            android:onClick="onClickPink"/>
+        <Button
+            android:layout_width="25pt"
+            android:layout_height="wrap_content"
+            android:id="@+id/yellowButton"
+            android:background="@color/yellow"
+            android:onClick="onClickYellow"/>
+        <Button
+            android:layout_width="25pt"
+            android:layout_height="wrap_content"
+            android:id="@+id/blackButton"
+            android:background="@color/green"
+            android:onClick="onClickGreen"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stroke width: "/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/strokeWidhtEdit"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:onClick="onClickClear"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
